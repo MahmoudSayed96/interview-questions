@@ -96,7 +96,56 @@ abstract class B {
 
 6. How laravel/JWT sotre use token in server?
 
-7. Reflaction Class in PHP
-8. Eger loading VS. Lazy loading in laravel
-9. Laravel Request LifeCycle
+7. Reflaction Class in PHP.
+8. Eger loading VS. Lazy loading in laravel.
+9. Laravel Request LifeCycle.
   ![Request Cycle](laravel-request-lifecycle.jfif)
+10. Laravel Service Provider
+   [Laravel Service Provider](https://www.youtube.com/watch?v=VYPfncvYW-Y&t=208s)
+   [Arabic](https://5dmat-web.com/ar/playlist/31/%D8%AF%D8%B1%D9%88%D8%B3_%D9%85%D8%AA%D9%82%D8%AF%D9%85%D8%A9_%D9%81%D9%8A_laravel)
+11. Laravel Service Container
+   > Manage classes dependancies
+    [Arabic](https://www.youtube.com/watch?v=Tnko0sRKQUU)
+12. What is Abstraction Concepts?
+13. What is Closure Function and pass by value or refrence?.
+  ```php
+    $products = Product::with(['category' => function ($q) use ($request) {
+              // This is closure function.
+              // pass by value to pass by ref using '&$request'
+              return $q->where('status', 1);
+     }]);
+  ```
+ 14. What is diff `truncate` , `delete` and `drop` in database?.
+  **TRUNCATE**.
+  > TRUNCATE Command is a Data Definition Language operation. It is used to remove all the records from a table. 
+  > It deletes all the records from an existing table but not the table itself. The structure or schema of the table is preserved.
+  >
+  > Truncate command marks the table for deallocation. This operation removes all the data from a table bypassing a number of constraints 
+  > enforced on the table. *MySQL does not allow the users to truncate the table which is referenced as FOREIGN KEY in another table*.
+
+ **DELETE**.
+  > The DELETE statement in SQL is a Data Manipulation Language(DML) Command. It is used to delete existing records from an existing table.
+  >  We can delete a single record or multiple records depending on the condition specified in the query.
+  >
+  > The conditions are specified in the WHERE clause of the DELETE statement. If we omit the WHERE clause then all of the records 
+  > will be deleted and the table will be empty.
+  > The DELETE statement scans every row before deleting it. Thus it is slower as compared to TRUNCATE command. If we want to delete all the records of a table,
+  > it is preferable to use TRUNCATE in place of DELETE as the former is faster than the latter.
+
+**DROP**.
+ > DROP statement is a Data Definition Language(DDL) Command which is used to delete existing database objects. 
+ > It can be used to delete databases, tables, views, triggers, etc.
+ > A DROP statement in SQL removes a component from a relational database management system (RDBMS).
+
+15. What is `csrf` in laravel ?.
+  > This CSRF token is generated automatically for each user. This token is nothing but a random string that 
+  > is managed by the Laravel application to verify the user requests.
+  >
+  > How to Use: This CSRF token protection can be applied to any HTML form in Laravel application by 
+  > specifying a hidden form field of CSRF token. The requests are validated automatically by the CSRF VerifyCsrfToken middleware.
+  > There are three different ways in which you can do this.
+  > @csrf
+  > csrf_field(): This function generate hidden html element.
+  > csrf_token(): This function just gives a random string.
+
+16. What the poroblem `CROS` and why happend?
