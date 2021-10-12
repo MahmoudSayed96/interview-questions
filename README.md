@@ -42,7 +42,7 @@ Why don't use class in constructor?
 > But the data in the `session` is lost when the web browser is closed.
 
 4 - What is `final class` and why use it ?
-
+ > The `final` keyword is used to prevent a class from being inherited and to prevent inherited method from being overridden.
 5 - What is diff between `abstract` ,`final` and `interface` class ?
 - Abstract class vs Interface.
   > Interface using for make blueprint structure.
@@ -95,7 +95,7 @@ abstract class B {
 > *The main purpose of using a final class is to prevent the class from being inherited*.
 
 6. How laravel/JWT sotre use token in server?
-
+  > the Laravel JWT Auth package, that the token is still being stored on the *server (using Laravel's cache system)* by default
 7. Reflaction Class in PHP.
 8. Eger loading VS. Lazy loading in laravel.
 9. Laravel Request LifeCycle.
@@ -151,3 +151,13 @@ abstract class B {
   > csrf_token(): This function just gives a random string.
 
 16. What the poroblem `CROS` and why happend?
+17. What is OOP in PHP?
+ *OOP stands for Object-Oriented Programming*.
+ > Procedural programming is about writing procedures or functions that perform operations on the data, while object-oriented programming 
+ > is about creating objects that contain both data and functions.
+ > 
+ > Object-oriented programming has several advantages over procedural programming:
+ > OOP is faster and easier to execute
+ > OOP provides a clear structure for the programs
+ > OOP helps to keep the PHP code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+ > OOP makes it possible to create full reusable applications with less code and shorter development time.
