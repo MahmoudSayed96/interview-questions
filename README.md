@@ -107,6 +107,8 @@ abstract class B {
    > Manage classes dependancies
     [Arabic](https://www.youtube.com/watch?v=Tnko0sRKQUU)
 12. What is Abstraction Concepts?
+  > Abstraction is the concept of object-oriented programming that "shows" only essential attributes and "hides" unnecessary information. 
+  > The main purpose of abstraction is hiding the unnecessary details from the users.
 13. What is Closure Function and pass by value or refrence?.
   ```php
     $products = Product::with(['category' => function ($q) use ($request) {
