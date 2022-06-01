@@ -168,3 +168,11 @@ abstract class B {
  - [**L**iskov](liskov-substitution-principle-php-arabic.pdf)
  - [**I**nterface Segregation](Interface-segregation-principle-arabic.pdf)
  - [**D**ependency Inversion](dependency-inversion-principle-php-arabic.pdf)
+ 
+ 19. What is **MVC** ?
+ > Design pattern using to structure code design for easier maintain and add features.
+ 
+ 20. What is **ORM** ?
+ > ORM: Object Relational Mapping - Map Relational Records Into Object.
+
+
