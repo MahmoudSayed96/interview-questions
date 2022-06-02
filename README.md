@@ -175,5 +175,10 @@ abstract class B {
  20. What is **ORM** ?
  > ORM: Object Relational Mapping - Map Relational Records Into Object.
 
-21. Service Provider
+21. [Service Provider](https://www.youtube.com/watch?v=Lf6R5oDtkFo&list=PLSfH3ojgWsQosqpQUc28yP9jJZXrEylJY&index=4)
 ![Service Provider](laravel-serverc-provider.png)
+
+22. [**Faced** in laravel](https://www.youtube.com/watch?v=Ze9rS88iy0M&list=PLSfH3ojgWsQosqpQUc28yP9jJZXrEylJY&index=5)
+> Faced allows us to call service instace method staticlly
+
+
