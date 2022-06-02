@@ -175,4 +175,5 @@ abstract class B {
  20. What is **ORM** ?
  > ORM: Object Relational Mapping - Map Relational Records Into Object.
 
-
+21. Service Provider
+![Service Provider](laravel-serverc-provider.png)
